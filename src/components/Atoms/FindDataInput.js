@@ -1,8 +1,9 @@
 import React from "react"
 
 
-function FindDataInput() {
+function FindDataInput(props) {
 
+    
 
     return(
         <div>

@@ -7,7 +7,7 @@ function SearchBar(props){
     return(
         <div className="search-bar">
             <h3 className="search-label">Search:</h3>
-            <FindDataInput />
+            <FindDataInput className="search-input"/>
             <FindDataButton/>
         </div>
 

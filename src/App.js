@@ -2,11 +2,12 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios"
 import ImgCard from "./components/Molecules/ImgCard"
+import SearchBar from "./components/Molecules/SearchBar"
 
 
 
 function App() {
-  const [pictureDay, setPictureDay] = useState("pictureDay");
+  const [pictureDay, setPictureDay] = useState([]);
 
 
   useEffect(() => {
@@ -23,12 +24,15 @@ function App() {
 
   return (
     <div className="App">
+    <SearchBar date={pictureDay.date}/>
       <ImgCard
        key={pictureDay.hdurl} 
        path={pictureDay.url} 
        detail={pictureDay.title} 
        date= {pictureDay.date}
+       info={pictureDay.explanation}
        />
+       
     </div>
   );
 }

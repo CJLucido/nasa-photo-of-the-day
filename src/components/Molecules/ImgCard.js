@@ -5,12 +5,14 @@ import ImgBox from "../Atoms/ImgBox"
 function ImgCard(props){
 
     return(
-        <div>
-            <ImgBox        key={props.hdurl} 
+        <div className="Img-card-container">
+        <h1>{props.info}</h1>
+            <ImgBox        
+            key={props.hdurl} 
             path={props.path} 
             detail={props.detail} 
             />
-            <p>{props.date}</p> 
+            <p className="Img-box-container">{props.date}</p> 
         
         </div>
     )

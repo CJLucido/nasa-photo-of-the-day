@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from "react";
-import "./App.css";
+//import "./App.css";
 import axios from "axios"
 import ImgCard from "./components/Molecules/ImgCard"
-import SearchBar from "./components/Molecules/SearchBar"
+import SearchBar from "./components/Molecules/SearchBar";
+import styled from "styled-components"
 
 
 
 function App() {
   const [pictureDay, setPictureDay] = useState([]);
-
+  
 
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')

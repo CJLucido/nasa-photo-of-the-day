@@ -3,16 +3,19 @@ import ImgBox from "../Atoms/ImgBox"
 import styled from "styled-components";
 
 const StyledImgCard = styled.div`
-        z-index: -1;
         border: 5px dashed white;
         background-color: black;
         color: white;
         display:flex;
         align-items: center;
-        height: 100vh;
+        height: fit-content;
+        flex-direction: column
 
         h1{
             border: 5px dashed yellow;
+            width: 50%;
+            height: 50%;
+            font-size: 1rem;
         }
 
         p {
